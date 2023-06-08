@@ -65,6 +65,7 @@ public class HotDrinksVendingMachine implements VendingMachines {
           acceptingMoney();
           System.out.println("Вы ввели недостаточно средств!");
         }
+        scn.close();
 
       }
 
