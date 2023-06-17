@@ -1,11 +1,11 @@
-package Seminar_1_Dz_1;
+package Seminar_3_Dz_1;
 
 public class HotDrink extends Drinks {
 
   int temperature;
-  int price;
+  long price;
 
-  public HotDrink(String drink, double volume, Boolean sugar, int temperature, int price) {
+  public HotDrink(String drink, double volume, Boolean sugar, int temperature, Long price) {
     super(drink, volume, sugar);
     this.temperature = temperature;
     this.price = price;
@@ -15,7 +15,7 @@ public class HotDrink extends Drinks {
     return temperature;
   }
 
-  public int getPrice() {
+  public Long getPrice() {
     return price;
   }
 

@@ -1,4 +1,4 @@
-package Seminar_1_Dz_1;
+package Seminar_3_Dz_1;
 
 public class Drinks {
   private String drink;

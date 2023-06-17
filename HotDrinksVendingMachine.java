@@ -1,4 +1,4 @@
-package Seminar_1_Dz_1;
+package Seminar_3_Dz_1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,12 +53,12 @@ public class HotDrinksVendingMachine implements VendingMachines {
         System.out.println("Внесите сумму стоимости напитка!\nСтоимость товара = " + hotDrink.getPrice());
         System.out.print("Внесение суммы: ");
         String enterMoney = scn.nextLine();
-        int intMoney = Integer.parseInt(enterMoney);
+        Long intMoney = Long.parseLong(enterMoney);
         if (intMoney >= hotDrink.getPrice()) {
           acceptingMoney();
           productDelivery();
           System.out.println(hotDrink);
-          int change = intMoney - hotDrink.getPrice();
+          Long change = intMoney - hotDrink.getPrice();
           deliveryOfChange();
           System.out.println("Сдача = " + change);
         } else {
